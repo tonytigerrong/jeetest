@@ -31,7 +31,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		ExtractAndOutput do1 = new ExtractAndOutput("./bin/reports");
 		do1.extract();
-		do1.outPut();//1
+		do1.outPut();//1 
 		do1.printSummary();
 	}
 }
