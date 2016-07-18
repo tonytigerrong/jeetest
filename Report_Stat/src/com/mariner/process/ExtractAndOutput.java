@@ -73,7 +73,9 @@ public class ExtractAndOutput {
 		}	
 	}
 	public void printSummary(){
+		// group by one field of a List<Object>
 		Map<String, List<Report>> reportsGrouped = reports.stream().collect(Collectors.groupingBy(w -> w.getService_guid()));
+		// show grouped result
 		reportsGrouped.forEach((k,v)->System.out.println("service_guid : " + k + " entities' num : " + v.size()));
 	}
 	public static void main(String[] args){
